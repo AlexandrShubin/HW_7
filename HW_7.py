@@ -1,0 +1,10 @@
+# Создать телефонный справочник с возможностью импорта и экспорта данных в нескольких форматах.
+# Я создам модуль помощника по работе с файлами
+def read_text_from_file(file_name):
+    with open(file_name, 'r', encoding='utf-8') as file:
+        data = file.read()
+    return data
+
+def write_text_in_file(file_name, text):
+    with open(file_name, 'w', encoding='utf-8') as file:
+        file.write(text)
